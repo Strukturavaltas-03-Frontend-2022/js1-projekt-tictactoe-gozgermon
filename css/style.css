@@ -1,0 +1,30 @@
+.game{
+    display: flex;
+}
+.playfield {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+    background-color: silver
+}
+
+.tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: blue;
+    border-color: silver;
+    border-width: 10px;
+    border-style: solid;
+}
+
+.mark {
+    font-size: 180px;
+    color: blue;
+
+}

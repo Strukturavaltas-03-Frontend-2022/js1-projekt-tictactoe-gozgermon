@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .game{
+            display: flex;
+        }
+        .playfield {
+            display: flex;
+            flex-wrap: wrap;
+            width: 600px;
+            height: 600px;
+            background-color: silver
+        }
+
+        .tile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            background-color: blue;
+            border-color: silver;
+            border-width: 10px;
+            border-style: solid;
+        }
+
+        .mark {
+            font-size: 180px;
+            color: blue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        Ezen a héten nagyon sok segítségre volt szükségem
+        az itt leírtakat átlátom de még sok lemaradást kell behozzak.
+        Akitől a segítséget kaptam az leginább C-ben programoz és azt
+        mondja, hogy az alkalmazott megoldások nem feltétlenül igazodnak
+        ahhoz, ami magasabb szintű nyelveken szokásos.
+    -->
+    <div class="game">
+        <div class="playfield">
+            <div class="tile" id="0">
+                <h1 class="mark">X</h1>
+            </div>
+            <div class="tile" id="1">
+                <h1 class="mark">X</h1>
+            </div>
+            <div class="tile" id="2">
+                <h1 class="mark">X</h1>
+            </div>
+            <div class="tile" id="3">
+                <h1 class="mark">X</h1>
+            </div>
+            <div class="tile" id="4">
+                <h1 class="mark">X</h1>
+            </div>
+            <div class="tile" id="5">
+                <h1 class="mark">X</h1>
+            </div>
+            <div class="tile" id="6">
+                <h1 class="mark">X</h1>
+            </div>
+            <div class="tile" id="7">
+                <h1 class="mark">X</h1>
+            </div>
+            <div class="tile" id="8">
+                <h1 class="mark">X</h1>
+            </div>
+        </div>
+        <button onclick="NewGame()">Új játék</button>
+        <h1 id="winner_disp">A nyertes:</h1>
+    </div>
+
+
+    <script src="./js/tictac.js"></script>
+
+</body>
+
+</html>
